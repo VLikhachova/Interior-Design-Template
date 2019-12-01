@@ -1,0 +1,65 @@
+
+@font-face {
+  font-family: "Font Awesome";
+  src: url(~@fontawesome/fontawesome-free/fonts/webfonts/fa-regular-400.woff2);
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+
+
+.phon {
+  background: rgb(94, 21, 104);
+}
+
+@import "app/_scss-core/_core";
+
+@import "scss/helpers";
+@import "scss/typography";
+
+@import "~bootstrap/scss/bootstrap-grid";
+
+
+$main: #181817;
+$orange: #fece76;
+$orange-buttons: #ffce76;
+$text-add: #31302d;
+$green: #749d26;
+$blue: #599ba7;
+$violet: #352b30;
+$product-active: #d9c940;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $main;
+  
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+.full-width {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}
+* {
+  box-sizing: border-box;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.orange{
+  color:$orange;
+}
+p {
+  color: white;
+}
+
+@import "navigation.scss";
+@import "features.scss";

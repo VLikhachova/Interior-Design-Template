@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Test</title>
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        </head>
+
+<body>
+   <header>
+       <section class="header">
+           <navigation>
+           <div class="container">
+               {{> components/navigation.handlebars}}
+           </div>
+       </navigation>           
+       </section>
+   </header> 
+   <section class="slider">
+       {{> components/slider.handlebars}}
+   </section>
+   <div class="container">
+       {{> components/features.handlebars}}
+   </div>
+  
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+   <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
