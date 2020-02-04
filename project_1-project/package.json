@@ -11,7 +11,7 @@
   "author": "Darya Konoval",
   "license": "ISC",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
+    "@fortawesome/fontawesome-free": "^5.12.0",
     "@sfem/breakpoint": "^1.2.1",
     "@sfem/css-sugars": "^1.2.1",
     "@sfem/grid": "^1.0.2",
@@ -66,6 +66,7 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "bootstrap-4-grid": "^3.2.0",
+    "font-awesome": "^4.7.0",
     "handlebars": "^4.0.11",
     "slick-carousel": "^1.8.1"
   }

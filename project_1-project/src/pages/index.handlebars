@@ -6,30 +6,113 @@
     <meta name="viewport" content="width=device-width">
     <title>Test</title>
      <link rel="stylesheet" type="text/css" href="css/style.css">
-     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-        </head>
+    </head>
 
 <body>
    <header>
        <section class="header">
-           <navigation>
-           <div class="container">
+           <nav>
+           <div class="container"> 
                {{> components/navigation.handlebars}}
            </div>
-       </navigation>           
+       </nav>           
        </section>
    </header> 
+   <div class="hide tablet-hide col-12 no-padding absolute">
+           <img src="img/Banner.png"/>
+            <div class="banner-text">
+                <p class="capitalize before">
+                    welcome to <span class="orange">pahu design</span>
+                </p>
+            </div>
+            <p class="uppercase bold tablet-hide">you are in good hands with us</p>
+       </div>
    <section class="slider">
        {{> components/slider.handlebars}}
-   </section>
-   <div class="container">
+   </section> 
+   <section class="centered">
+           <div class="container">
+           <div class="title">
+                    <h1 class="uppercase orange center"><a name="features">why choose us</a></h1>
+                    <div class="dot"></div>
+                    <div class="lining"></div>
+               </div>
        {{> components/features.handlebars}}
    </div>
-  
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-  crossorigin="anonymous"></script>
-   <script type="text/javascript" src="slick/slick.min.js"></script>
+   </section> 
+   <section class="full-screen wrapper mobile-hide">
+       {{> components/details.handlebars}}
+   </section>
+   <section class="product-listing">
+       <div class="container">
+          <div class="title">
+                   <h2 class='uppercase'>our collection</h2>
+                   <div class="dot"></div>
+                   <div class="lining"></div>
+            </div>
+               <div class="products">
+                   {{> components/product-listing.handlebars}}
+               </div>
+           </div>
+   </section>
+   <section class="team">
+       <div class="container">
+            <div class="title">
+                <h2 class='uppercase orange'>our designer</h2>
+                <div class="dot"></div>
+                <div class="lining"></div>
+            </div>
+       <div class='row'>
+           <div class="col-lg-4 tablet-flex">
+               <div class="team-member">
+                   <img src="img/avatar-1.png"/>
+                   <div class="name capitalize">
+                       bertil stam
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-4 tablet-flex">
+               <div class="team-member">
+                   <img src="img/avatar-2.png"/>
+                   <div class="name capitalize">
+                       janet park
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-4 tablet-flex">
+               <div class="team-member">
+                   <img src="img/avatar-3.png"/>
+                   <div class="name capitalize">
+                       wm munoz
+                   </div>
+               </div></div>
+       </div>
+       </div>
+   </section>
+   <section class="project">
+       <div class="title">
+            <h2 class='uppercase black'>our project</h2>
+            <div class="dot"></div>
+            <div class="lining"></div>
+        </div>
+        <video width="320" height="240" class="hide" controls>
+            <source src="img/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+       {{> components/project.handlebars}}
+   </section>
+   <section class="blog">
+       <div class="title black uppercase">
+           <h2 class="uppercase black">from our blog</h2>
+           <div class="dot"></div>
+           <div class="lining"></div>
+       </div>
+       <div class="container blog-post">
+           {{> components/blog.handlebars}}
+       </div>
+   </section>
+   <section class="footer">
+       {{> components/footer.handlebars}}
+   </section>
+
 </body>

@@ -1,5 +1,8 @@
+/*.header {
+    height: 110px;
+}*/
 navigation {
-    position: fixed;
+  //  position: fixed;
     height: 110px;
     background-color: black;
     width: 100%;
@@ -20,6 +23,20 @@ navigation {
         padding: 0 15px;
         margin: 0 10px;
         padding-top: 10px;
+        &.active {
+            position: relative;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 70%;
+                height: 4px;
+                background: $orange-buttons;
+                top: 70px;
+                //js
+            }
+        }
+    }
             a {
                 text-transform: uppercase;
                 outline: none;
@@ -29,20 +46,6 @@ navigation {
                     color: $orange;
                 }
             }
-        &.active {
-            position: relative;
-            &:before {
-                content: '';
-                display: block;
-                position: absolute;
-                width: 50%;
-                height: 4px;
-                background: $orange-buttons;
-                top: 70px;
-                //js
-            }
-        }
-    }
 }
 
     .customer-panel {
@@ -66,8 +69,8 @@ navigation {
                 position: absolute;
                 border-radius: 50%;
                 background-color: #dd9c27;
-                top: -5px;
-                left: 28px;
+                top: -10px;
+                left: 30px;
                 color: white;
                 font-size: 13px;
                 line-height: 20px;

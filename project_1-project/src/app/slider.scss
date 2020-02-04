@@ -1,3 +1,66 @@
-.slider-item {
-    width: 100%;
+.banner {
+    img {
+        width: 100vw;
+        max-height: 880px;
+    }
+    &-item {
+        /*background-size: cover;
+        background-repeat: no-repeat;
+        width: 1680px;
+        height: 880px;*/
+        position: relative;
+    }
+    &-text{
+        position: absolute;
+        top: 45%;
+        left: 20%;
+        margin-top: -100px;
+        color: white;
+        width: 33.333%;
+        font-size: 25px;
+        .bold {
+            font-size: 60px;
+            font-style: bold;
+            position: relative;
+        }
+        .before {
+            padding-bottom: 65px;
+            padding-left: 65px;
+            &:before {
+                content:"";
+                background-color: $orange;
+                height: 4px;
+                width: 60px;
+                position: absolute;
+                left: 0;
+                top: 13px;
+            }
+        }
+    }
+}
+
+.slick- {
+    &arrow {
+    background: rgba($color: #f8f8f8, $alpha: 0.1);
+    border-radius: 50%;
+    border : 1px solid rgba(248, 248, 248, 0.1);
+    width: 65px;
+    height: 65px;
+    z-index: 1;
+    font-size: 0;
+    margin: 0 40px;
+        &before {
+            z-index: 10;
+        }
+    }
+    &prev {
+    left: 0; 
+   /* &:before {
+        content: "\f053";
+        font-family: "Font Awesome 5 Free";
+        }*/
+    }
+    &next {
+    right: 0;
+    }
 }

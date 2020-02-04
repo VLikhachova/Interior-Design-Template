@@ -1,7 +1,7 @@
 import './app.scss';
 
 import $ from 'jquery'
-
+import 'slick-carousel/slick/slick.min.js';
 window.jQuery = $;
 
 $(document).ready(function(){
@@ -9,64 +9,32 @@ $(document).ready(function(){
       slidesToShow: 1,
       slidesToScroll: 1,
       infinite: true,
-
     });
   });
 
-/*let message=prompt ("put your number", 1);
+  $(document).ready(function(){
+    $('.project-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+          }
+        }
+      ]
+    });
+  });
 
-function showMessage () {
-    if (message > 0) {
-        alert(1)
-    }
-    else if (message < 0) {
-        alert(-1)
-    }
-    else if (message = 0) {
-        alert (0)
-    }
-}
-
-showMessage();
-
-
-let result = Math.min(1,5)
-alert (result)
-
-
-let i=prompt("number?",100)
-do {
-    prompt("number?", 100)
-    i++
-}
-while (i < 100, i==null) 
-    
- 
-let salaries = {
-    John: 100,
-    Ann: 160,
-    Pete: 130}
-    let sum = salaries.John+salaries.Ann+salariesPete
-    console.log (sum)
-
-
-
-let arr = ["HTML", "JavaScript", "CSS"];
-
-let sorted=copySorted(arr);
-function copySorted(arr) {
-
-    let newArr = arr.concat()
-    return (newArr.sort())
-}
-
-alert(arr)
-alert(sorted)
-
-
-
-let vasya = { name: "Вася", age: 25 };
-let petya = { name: "Петя", age: 30 };
-let masha = { name: "Маша", age: 28 };
-
-let users = [ vasya, petya, masha ];*/
+  $(".icon").click(function test(event) {
+    event.preventDefault();
+   // $("test").addClass("open");
+  });
+  $(document).ready(function(){
+    $(".icon").click(function(event){
+      $(".test").toggleClass("open");
+      $(".icon").css("float", "right");
+    });
+  });
